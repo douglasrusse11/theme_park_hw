@@ -37,7 +37,7 @@ public class VisitorTest {
 
     @Test
     public void canAddVisitedAttraction() {
-        visitor.addVisitedAttraction(new Park("Leafy Meadows", 9))
+        visitor.addVisitedAttraction(new Park("Leafy Meadows", 9));
         assertEquals(1, visitor.getVisitedAttractions().size());
     }
 }

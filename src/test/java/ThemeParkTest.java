@@ -45,7 +45,7 @@ public class ThemeParkTest {
     public void canVisit() {
         Visitor visitor = new Visitor(25, 175, 100);
         themePark.visit(visitor, themePark.getAttractions().get(0));
-        assertEquals(themePark.getAttractions().get(0), visitor.getVisitedAttraction().get(0));
+        assertEquals(themePark.getAttractions().get(0), visitor.getVisitedAttractions().get(0));
         assertEquals(1, themePark.getAttractions().get(0).getVisitCount());
     }
 }
