@@ -48,4 +48,15 @@ public class ThemeParkTest {
         assertEquals(themePark.getAttractions().get(0), visitor.getVisitedAttractions().get(0));
         assertEquals(1, themePark.getAttractions().get(0).getVisitCount());
     }
+
+    @Test
+    public void hasReviews() {
+        assertEquals(9, themePark.getReviews().get("Leafy Meadows"));
+    }
+
+    @Test
+    public void canGenerateAllowedAttractionsStalls() {
+        Visitor visitor = new Visitor(11, 100, 100);
+        assertEquals(5, themePark.getAllAllowedFor(visitor));
+    }
 }
