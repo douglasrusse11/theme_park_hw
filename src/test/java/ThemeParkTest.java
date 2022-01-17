@@ -51,12 +51,12 @@ public class ThemeParkTest {
 
     @Test
     public void hasReviews() {
-        assertEquals(9, themePark.getReviews().get("Leafy Meadows"));
+        assertEquals(new Integer(9), themePark.getReviews().get("Leafy Meadows"));
     }
 
     @Test
     public void canGenerateAllowedAttractionsStalls() {
         Visitor visitor = new Visitor(11, 100, 100);
-        assertEquals(5, themePark.getAllAllowedFor(visitor));
+        assertEquals(5, themePark.getAllAllowedFor(visitor).size());
     }
 }

@@ -1,8 +1,9 @@
 package attractions;
 
+import behaviours.ISecurity;
 import people.Visitor;
 
-public class RollerCoaster  extends Attraction {
+public class RollerCoaster  extends Attraction implements ISecurity {
 
     private static double defaultPrice = 8.40;
 
